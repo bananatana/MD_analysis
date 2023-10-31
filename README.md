@@ -8,4 +8,6 @@ This script performs RMSD analysis for both the ligand and protein, as well as R
 
 **pca_conformations.ipynb**
 
-The script performs Principal Component Analysis (PCA) using CA-CA distances from an MD trajectory and subsequently applies K-Means clustering. Following the visualization of the results, it preserves a representative PDB structure for each cluster within every PCA combination. The representative structure is determined as the actual structure that is geometrically closest to the average structure within the cluster.
+The script performs Principal Component Analysis (PCA) using CA-CA distances from an MD trajectory and subsequently applies K-Means clustering. 
+Within the script, the Elbow method is performed to determine number of clusters.
+Following the visualization of the results, it preserves a representative PDB structure for each cluster within desired PCA combination. The representative structure is determined as the actual structure that is geometrically closest (RMSD) to the average structure within the cluster.
