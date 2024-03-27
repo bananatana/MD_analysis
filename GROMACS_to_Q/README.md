@@ -5,15 +5,12 @@ First, you get the pdb file you want to use as your starting point. This documen
 
 
 1) Reasonable amount of membrane should be cut since the system is huge. I usually cut it with VMD. 
-    Open the pdb file in VMD
-    Graphic --> Representations
-    set representation to: 
+    Open the pdb file in VMD, go to Graphic --> Representations and set representation to: 
 
     ```(same resid as (all within 32 of resname LIG) and resname POPC) and not water and not resname LIG or all protein ```
 
-    obviously you need to check what is your LIG name and also how much you want to cut
-    Save this representation as pdb
-    Save ligand representation as pdb
+    obviously you need to check what is your LIG name and also how much you want to cut.
+    Save this representation and ligand representation as pdb.
 
 
 2) What about the water molecules? Due to heavy solvation in our systems, GROMACS begins assigning alphanumeric names to water molecules. This causes confusion in both Pymol and VMD, leading to scrambled residue names for water in the output files. Use this instead:
