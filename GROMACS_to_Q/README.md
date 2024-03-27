@@ -7,7 +7,7 @@ First, you get the pdb file you want to use as your starting point. This documen
 Open the pdb file in VMD
 Graphic --> Representations
 set representation to: 
-"""(same resid as (all within 32 of resname LIG) and resname POPC) and not water and not resname LIG or all protein (obviously you need to check what is your LIG name and also how much you want to cut)"""
+'''(same resid as (all within 32 of resname LIG) and resname POPC) and not water and not resname LIG or all protein (obviously you need to check what is your LIG name and also how much you want to cut)'''
 Save this representation as pdb
 Save ligand representation as pdb
 
