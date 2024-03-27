@@ -14,13 +14,16 @@ Save ligand representation as pdb
 2) What about the water molecules? Due to heavy solvation in our systems, GROMACS begins assigning alphanumeric names to water molecules. This causes confusion in both Pymol and VMD, leading to scrambled residue names for water in the output files. Use this instead:
 
 **get_waters.pml**
+
 Obtain the desired radius of water surrounding your protein using this Pymol script. The numbering of water molecules may still appear scrambled, and you might notice an unusual patch of water, but there's no need to worry. 
 Your output should be: selected_water.pdb
 
 **process_solvent.py**
+
 This Python script restores the correct numbering of water molecules. Output is selected_waters_fixed.pdb
 
 **merge.sh**
+
 This script combines the previously obtained protein and membrane structures with your water PDB file.
 
 Your task isn't complete yet. Due to slight differences in residue names and atom types between QligFEP and GROMACS output, we still need to address this. To do so, we utilize the script. 
