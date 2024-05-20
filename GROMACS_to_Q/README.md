@@ -32,7 +32,7 @@ First, you get the pdb file you want to use as your starting point. This documen
 
     **fix_pdb_Q.sh**
 
-After all these steps, the only remaining (hopefully) issue to address is changing CYS to CYX if there is a cysteine bridge(s) in your system. We hope this adjustment will ensure acceptance of your input by Q!
+After all these steps, the only remaining (hopefully) issue to address is changing CYS to CYX if there is a cysteine bridge(s) in your system. Also, fix the last residue -COO group: atom type O instead O1 and OXT instead O2. We hope this adjustment will ensure acceptance of your input by Q!
 
 
 
