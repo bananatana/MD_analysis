@@ -16,3 +16,6 @@ Following the visualization of the results, it preserves a representative PDB st
 
 The script computes the RMSF of heavy ligand atoms, both for each individual MD replica and collectively across multiple replicas, including the standard deviation. The results are presented as histograms, with an option to display functional groups in distinct colors.
 
+**water_bridge_TT.ipynb**
+
+The script computes the number of "water-bridged" hydrogen bonds for the specified residues. The results are stored in a pandas DataFrame for further analysis and exported to a CSV file, with one replicate listed below the other. Additionally, the script calculates the average occupancy across three replicates for the selected residues.
